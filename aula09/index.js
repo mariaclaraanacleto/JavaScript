@@ -11,6 +11,17 @@
  const num3 = 10;
  console.log((num1 + num2) * num3);
 
+ /*
+ Incremento = ++
+ Decremento = --
+ */
  let contador = 1;
- contador++;
+ console.log(contador++);
  console.log(contador);
+
+ const passo = 2;
+ let cont = 0;
+ cont *= passo;
+ console.log(cont);
+
+ 
