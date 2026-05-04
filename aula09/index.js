@@ -20,8 +20,9 @@
  console.log(contador);
 
  const passo = 2;
- let cont = 0;
- cont *= passo;
+ let cont = 2;
+ cont += passo;
  console.log(cont);
 
+ //NaN = Not a number, ParseInt transforma em (inteiro), e ParseFloat transforma em (decimais)
  
