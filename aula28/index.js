@@ -1,21 +1,36 @@
-const data = new Date('2026-11-19 00:00');
-const diaSemana = data.getDay();
-let diaSemanaTexto
+function getDiaSemanaTexto (diaSemana){
+let diaSemanaTexto;
 
-if (diaSemana === 0){
+switch (diaSemana){
+case 0:
     diaSemanaTexto = 'Domingo';
-} else if (diaSemana === 1){
+    return diaSemanaTexto;
+case 1:
     diaSemanaTexto = 'Segunda';
-} else if (diaSemana === 2){
+    return diaSemanaTexto;
+case 2:
     diaSemanaTexto = 'Terça';
-} else if (diaSemana === 3){
+    break;
+case 3:
     diaSemanaTexto = 'Quarta';
-} else if (diaSemana === 4){
+    return diaSemanaTexto;
+case 4:
     diaSemanaTexto = 'Quinta';
-} else if (diaSemana === 5){
+    return diaSemanaTexto;
+case 5:
     diaSemanaTexto = 'Sexta';
-} else if (diaSemana === 6){
-    diaSemanaTexto = 'Sábado';
+    return diaSemanaTexto;
+case 6:
+    diaSemanaTexto = 'Sabádo';
+    return diaSemanaTexto;
+default:
+    diaSemanaTexto = '';
+    return diaSemanaTexto;
+}
 }
 
-console.log(diaSemana. diaSemanaTexto);
+const data = new Date('2026-06-15');
+const diaSemana = data.getDay();
+const diaSemanaTexto = getDiaSemanaTexto (diaSemana);
+
+console.log(diaSemana, diaSemanaTexto);
