@@ -30,5 +30,5 @@ const verdadeira = true;
 //
 //falaOi()
 
-//console.log(sobrenome); // console.log antes do var, let, const, aparecerá como undefined
+//console.log(sobrenome); // console.log só funciona antes da variavel se vc decalrar ela antes, se não ela será undefind
 //var sobrenome = 'Miranda';
